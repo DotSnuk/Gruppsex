@@ -71,3 +71,18 @@ main {
 article {
   border: 1px solid black;
 }
+
+.indexItemImg {
+  width: 50px;
+}
+
+.indexItemContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.indexArticle {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
