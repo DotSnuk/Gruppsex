@@ -65,6 +65,10 @@ ul {
   justify-content: center;
 }
 
+table, td, th {
+  border: 1px solid black;
+}
+
 li {
   margin: 20px;
 }
