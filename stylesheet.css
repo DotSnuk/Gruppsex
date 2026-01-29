@@ -98,3 +98,14 @@ a img {
   flex-direction: row;
   padding: 5px;
 }
+
+.founders {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+}
+
+.founderimg {
+  width: 200px;
+}
