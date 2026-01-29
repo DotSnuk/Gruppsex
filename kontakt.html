@@ -21,14 +21,40 @@
         <article>
             <form>
                 <label for="Namn">
-                    Namn:
-                </label>
-
-                <input>
+                    Namn: *
+                </label><br>
+                <input type="text" id="Namn" name="Namn" required><br>
+                <label for="E-post">
+                    E-post: *
+                </label><br>
+                <input type="email" id="E-post" name="E-post" required><br>
+                <label for="Amne">
+                    Ämne:
+                </label><br>
+                <input type="text" id="Amne" name="Amne"><br>
+                <label for="Meddelande">
+                    Meddelande:
+                </label><br>
+                <input type="text" id="Meddelande" name="Meddelande"><br>
+                <input type="submit" value="Skicka">
             </form>
         </article>
-        <article>
-          blabla
+        <h2>Grundare</h2>
+        <article class="founders">
+          <div><p>Hampus</p>
+            <img class="founderimg" src="bilder/hampus.png" alt="Grundare Hampus">
+            <a href="mailto:hampus@mail.com">hampus@mail.com</a>
+          </div>
+          <div>
+            <p>Tobias</p>
+            <img class="founderimg" src="bilder/tobias.png" alt="Grundare Tobias">
+            <a href="mailto:tobias@mail.com">tobias@mail.com</a>
+          </div>
+          <div>
+            <p>Felicia</p>
+            <img class="founderimg" src="bilder/felicia.png" alt="Grundare Felicia">
+            <a href="mailto:felicia@mail.com">felicia@mail.com</a>
+          </div>
         </article>
     </main>
 </body>
