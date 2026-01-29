@@ -5,8 +5,9 @@
   justify-content: center;
   --color-1: #09637E;
   --color-2: #088395;
-  --color-3: #7AB2B2;
-  --color-4: #EBF4F6;
+  --color-3: #BFC9D1;
+  --color-4: #EAEFEF;
+  --header-color: #FF9B51;
 }
 
 #container {
@@ -39,8 +40,9 @@ body {
 aside {
   flex-basis: 100px;
   flex-shrink: 0;
-  background-color: yellow;
   padding-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 header {
@@ -48,7 +50,7 @@ header {
 }
 
 h1 {
-  color: var(--color-3);
+  color: var(--header-color);
   font-size: 22px;
   text-align: center;
 }
@@ -67,17 +69,23 @@ li {
   margin: 20px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
-  background-color: darkgray;
+  
   width: 100%;
 }
 
 article {
   border: 1px solid black;
+  background-color: var(--color-3);
 }
 
 a img {
