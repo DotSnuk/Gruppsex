@@ -54,7 +54,6 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  list-style-type: none;
 }
 
 li {
@@ -87,9 +86,4 @@ article {
   display: flex;
   flex-direction: row;
   padding: 5px;
-}
-
-.kauloga {
-  background-color: yellow;
-  width: 100%;
 }
