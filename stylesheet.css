@@ -84,6 +84,10 @@ a img {
   width: 200px;
 }
 
+button {
+  width: 20%;
+}
+
 .indexItemImg {
   width: 50px;
 }
@@ -108,4 +112,14 @@ a img {
 
 .founderimg {
   width: 200px;
+}
+
+.annonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.tillSaluText {
+  display: flex;
+  flex-direction: column;
 }
