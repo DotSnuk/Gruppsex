@@ -87,3 +87,13 @@ article {
   flex-direction: row;
   padding: 5px;
 }
+
+.buttonTillSalu {
+background-color: azure;
+border: black;
+color: black;
+padding: auto;
+text-align: center;
+width: 65px;
+flex-direction:row;
+}
