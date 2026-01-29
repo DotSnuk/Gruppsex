@@ -3,6 +3,10 @@
 :root {
   display: flex;
   justify-content: center;
+  --color-1: #09637E;
+  --color-2: #088395;
+  --color-3: #7AB2B2;
+  --color-4: #EBF4F6;
 }
 
 #container {
@@ -28,6 +32,8 @@ body {
   align-items: center;
   align-self: center;
   width: 980px;
+  background-color: var(--color-4);
+  color: var(--color-1);
 }
 
 aside {
@@ -42,6 +48,7 @@ header {
 }
 
 h1 {
+  color: var(--color-3);
   font-size: 22px;
   text-align: center;
 }
