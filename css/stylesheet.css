@@ -9,6 +9,7 @@
   --color-4: #EAEFEF;
   --header-color: #FF9B51;
   --footer-color: #25343F;
+  /*Färger tagna från https://colorhunt.co/palette/eaefefbfc9d125343fff9b51*/
 }
 
 #container {
@@ -77,6 +78,7 @@ ul {
 table, td, th {
   border: 1px solid black;
 }
+/*Flera element ändrade sammtidigt. Smidigt!*/
 
 li {
   margin: 20px;
