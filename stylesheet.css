@@ -110,6 +110,10 @@ button {
   width: 20%;
 }
 
+#Bild {
+  width: 250px;
+}
+
 .indexItemImg {
   width: 50px;
 }
