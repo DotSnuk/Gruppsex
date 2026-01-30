@@ -144,3 +144,8 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+.h2 {
+  display: auto;
+  flex: auto;
+}
