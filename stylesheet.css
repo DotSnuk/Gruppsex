@@ -114,6 +114,10 @@ button {
   width: 250px;
 }
 
+#GoogleMaps_link {
+  height: 450px;
+}
+
 .indexItemImg {
   width: 50px;
 }
