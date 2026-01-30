@@ -99,6 +99,7 @@ main {
 article {
   border: 1px solid black;
   background-color: var(--color-3);
+  
 }
 
 a img {
@@ -119,9 +120,12 @@ button {
 }
 
 .indexArticle {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   padding: 5px;
+  
 }
 
 .founders {
