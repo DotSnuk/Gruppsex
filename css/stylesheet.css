@@ -76,15 +76,14 @@ h2 {
   gap: 50px;
 }
 
-#menu:hover .dropdown {
-  display: flex;
-  z-index: 1;
-  position: absolute;
-  background-color: #FF9B51;
-}
 
 .dropdown-container {
   position: relative;
+}
+
+.dropdown-container:hover .dropdown {
+  display: flex;
+  
 }
 
 .dropdown {
@@ -92,6 +91,7 @@ h2 {
   flex-direction: column;
   position: absolute;
   top: 100%;
+  background-color: #FF9B51;
 }
 
 .dropdown > a:hover {
