@@ -36,16 +36,46 @@
                 </label><br>
                 <input type="email" id="E-post" name="E-post" required><br>
                 <!--Required för att se till att det viktiga skrivs in-->
+                <label for="Telefon">
+                    Telefonnummer: *
+                </label><br>
+                <input type="tel" id="Telefon" name="Telefon" required><br>
+                <p>Vill helst bli kontaktad via:</p>
+                <label>
+                    <input type="radio" name="kontaktad" value="mejl" checked="checked">
+                    E-post
+                </label>
+                <label for="">
+                    <input type="radio" name="kontaktad" value="samtal">
+                    Telefonsamtal
+                </label>
+                <label>
+                    <input type="radio" name="kontaktad" value="sms">
+                    SMS
+                </label><br>
                 <label for="Amne">
                     Ämne:
                 </label><br>
-                <input type="text" id="Amne" name="Amne"><br>
+                <select>
+                    <option value="Produkt">Produktfrågor</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="frågor">Almäna Frågor</option>
+                    <option value="övrigt">Övrigt</option>
+                </select><br>
                 <label for="Meddelande">
                     Meddelande:
                 </label><br>
-                <textarea id="Meddelande" name="Meddelande">
+                <textarea id="Meddelande" name="Meddelande" rows="5">
                  </textarea><br>
                  <!--textarea för större kommentarsfält-->
+                 <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
+                 <label for="GDPR">
+                    Jag Godkäner Användarvillkoren *
+                 </label><br>
+                <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
+                 <label for="GDPR">
+                    Jag vill gå med i Gruppsex nyhetsbrev
+                 </label><br>               
                  <input type="submit" value="Skicka">
             </form>
 
