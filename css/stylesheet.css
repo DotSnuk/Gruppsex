@@ -181,3 +181,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
+main > article.indexArticle > a {
+  display: block;
+}
