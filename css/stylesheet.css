@@ -8,8 +8,13 @@
   --color-3: #BFC9D1;
   --color-4: #EAEFEF;
   --header-color: #FF9B51;
+  --header-color-darker: #EE9A50;
   --footer-color: #25343F;
   /*Färger tagna från https://colorhunt.co/palette/eaefefbfc9d125343fff9b51*/
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #container {
@@ -79,24 +84,36 @@ h2 {
 
 .dropdown-container {
   position: relative;
+  width: 150px;
 }
 
 .dropdown-container:hover .dropdown {
   display: flex;
-  
 }
 
 .dropdown {
+  /* gömmer allt i klassen by default 
+    posi
+  */
   display: none;
   flex-direction: column;
   position: absolute;
   top: 100%;
+  width: 100%;
   background-color: #FF9B51;
+  border: 1px solid black;
+
+}
+
+.dropdown > a {
+  margin-top: 5px;
+  width: 100%;
 }
 
 .dropdown > a:hover {
-      background-color: #25343F;
-}
+  background-color: var(--header-color-darker);
+
+} 
 
 table, td, th {
   border: 1px solid black;
