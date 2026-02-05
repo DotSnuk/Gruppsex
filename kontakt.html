@@ -24,61 +24,57 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Kontakta oss</h2>
-        <article>
+    <main class="testCSS">
+      <!--Gör en separat artikelklass för att kunna använda flexbox på formuläret-->
+        <article class="formCss">
             <form>
-                <label for="Namn">
-                    Namn: *
-                </label><br>
-                <input type="text" id="Namn" name="Namn" required><br>
-                <label for="E-post">
-                    E-post: *
-                </label><br>
-                <input type="email" id="E-post" name="E-post" required><br>
-                <!--Required för att se till att det viktiga skrivs in-->
-                <label for="Telefon">
-                    Telefonnummer: *
-                </label><br>
-                <input type="tel" id="Telefon" name="Telefon" required><br>
-                <p>Vill helst bli kontaktad via:</p>
-                <label>
-                    <input type="radio" name="kontaktad" value="mejl" checked="checked">
-                    E-post
-                </label>
-                <label for="">
-                    <input type="radio" name="kontaktad" value="samtal">
-                    Telefonsamtal
-                </label>
-                <label>
-                    <input type="radio" name="kontaktad" value="sms">
-                    SMS
-                </label><br>
-                <label for="Amne">
-                    Ämne:
-                </label><br>
-                <select>
+              <fieldset class="rubrik">
+                <legend>Kontakta oss</legend>
+
+                <div class= "kontakt">
+                  <label for="Namn">Namn: *</label>
+                  <input type="text" id="Namn" name="Namn" required>
+
+                  <label for="E-post">E-post: *</label>
+                  <input type="email" id="E-post" name="E-post" required>
+
+                  <label for="Telefon">Telefonnummer: *</label>
+                  <input type="tel" id="Telefon" name="Telefon" required>
+                  <!--Grupperar elementen inuti för enklare CSS. 
+                  Lägger till Required för att säkerstäla att vi får de viktigaste uppgifterna-->
+                </div>
+
+                <div class="radio">
+                  <p>Vill helst bli kontaktad via:</p>
+                  <label for="mail">E-post</label>
+                  <input type="radio" name="kontaktad" value="mejl" checked="checked">
+                  <label for="samtal">Telefonsamtal</label>
+                  <input type="radio" name="kontaktad" value="samtal">
+                  <label for="SMS">SMS</label>
+                  <input type="radio" name="kontaktad" value="sms">
+                </div>
+
+                <label for="Amne">Ämne:</label>
+                  <select>
                     <option value="Produkt">Produktfrågor</option>
                     <option value="feedback">Feedback</option>
                     <option value="frågor">Almäna Frågor</option>
                     <option value="övrigt">Övrigt</option>
-                </select><br>
-                <label for="Meddelande">
-                    Meddelande:
-                </label><br>
-                <textarea id="Meddelande" name="Meddelande" rows="5">
-                 </textarea><br>
-        <!--textarea för större kommentarsfält-->
-        <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
-        <label for="GDPR">
-          Jag Godkäner Användarvillkoren *
-        </label><br>
-        <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
-        <label for="GDPR">
-          Jag vill gå med i Gruppsex nyhetsbrev
-        </label><br>
-        <input type="submit" value="Skicka">
-      </form>
+                  </select>
+
+                <label for="Meddelande">Meddelande:</label>
+                <textarea id="Meddelande" name="Meddelande" rows="5"></textarea>
+                <!--textarea för större kommentarsfält-->
+                
+                <label for="GDPR">Jag godkänner villkoren</label>
+                <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
+
+                <label for="GDPR">Jag vill gå med i Gruppsex nyhetsbrev</label>
+                <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
+
+                <input type="submit" value="Skicka">
+              </fieldset>
+            </form>
 
     </article>
     <h2>Grundare</h2>

@@ -203,39 +203,92 @@ main > article.indexArticle > a {
   display: block;
 }
 
-.styleForm {
+/* Klassartikeln som styr flexbox*/
+article.formular {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
-  border: none;
+  border: transparent;
   background-color: transparent;
 }
 
-fieldset {
-  border: transparent;
-  margin: 0;
-  padding: 0;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-color: transparent;
+  background-color: none;
 }
 
+fieldset.rubrik {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  background-color: var(--color-3);
+  border-color: var(--color-1);
+  border-radius: 12px;
+}
+
+/*Rubriken "kontakta oss"*/
 legend {
-  margin: 0;
-  padding: 0;
   font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  color: var(--color-1);
+  font-size: 18px;
 }
 
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.radio p {
+  margin-bottom: 5px;
+}
+
+.radio {
+  display: flex;
+  align-items: column;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+label[type="checkbox"] {
+  vertical-align: middle;
+}
+
+label[for=Namn], label[for=E-post], label[for=Telefon] {
+  text-align: left;
+  display: block;
+}
+
+select {
+  font-size: 1rem;
+  padding: 5px;
+}
+
+/* Designen på artikeln (förälder till formuläret)
+.formulärCss {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}*/
+
+/* Designen på formuläret
 form {
   margin: 0;
-  border: solid gray 2px;
+  border: solid var(--color-1) 2px;
   border-radius: 2rem;
-  padding: 0 30px 30px 30px;
+  padding: 0;
   background-color: var(--color-3);
-}
+}*/
 
-input[type="text"], input[type=email], input[type=tel] {
-  
-}
+/* Designen på formulärets innehåll
+.rubrik {
+  border: pink;
+  margin: 0;
+  padding: 0;
+}*/
