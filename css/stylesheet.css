@@ -185,3 +185,8 @@ button {
 main > article.indexArticle > a {
   display: block;
 }
+
+form {
+  padding: 2rem;
+box-align: center;
+}
