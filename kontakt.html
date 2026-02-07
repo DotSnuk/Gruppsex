@@ -10,84 +10,66 @@
 <!--Head är standard. Ändra bara på title och sedan copypasta-->
 
 <body>
-  <header>
-    <a href="index.html">
-      <!--Loggan är gjord med vektorgrafik så det går fort ta fram en ny om denna blir för pixlig-->
-      <img src="bilder/LoggaTextLiten.png" alt="GruppSex loggotyp. Fem blåa cirklar i form av en blomma.">
-    </a>
-    <h1><a href="index.html">GruppSex</a></h1>
-    <!--Länk i h1 för att smidigt ta sig tillbaka till hem igen-->
-    <nav id="menu">
-      <div class="dropdown-container">
-        <a href="#">Meny</a>
-        <div class="dropdown">
-          <a href="index.html">Hem</a>
-          <a href="#">Skapa annons</a>
-          <a href="#">Villkor</a>
-          <a href="#">Gratis bitcoin</a>
-        </div>
-      </div>
+    <header>
+        <a href="index.html">
+        <!--Loggan är gjord med vektorgrafik så det går fort ta fram en ny om denna blir för pixlig-->
+        <img src="bilder/LoggaTextLiten.png" alt="GruppSex loggotyp. Fem blåa cirklar i form av en blomma.">
+      </a>
+        <h1><a href="index.html">GruppSex</a></h1>
+        <!--Läng i h1 för att smidigt ta sig tillbaka till hem igen-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <!--Gör en separat artikelklass för att kunna använda flexbox på formuläret-->
+        <article class="formular">
+            <form>
+              <fieldset class="rubrik">
+                <legend>Kontakta oss</legend>
 
+                <label for="Namn">Namn: *</label>
+                <input type="text" id="Namn" name="Namn" required>
+                
+                <label for="E-post">E-post: *</label>
+                <input type="email" id="E-post" name="E-post" required>
 
-      <a href="kontakt.html">Kontakt</a>
+                <label for="Telefon">Telefonnummer: *</label>
+                <input type="tel" id="Telefon" name="Telefon" required>
+                  <!--Lägger till Required för att säkerstäla att vi får de viktigaste uppgifterna-->
+                
+                <p>Vill helst bli kontaktad via:</p>
+                <label for="mail">E-post</label>
+                <input type="radio" name="kontaktad" value="mejl" checked="checked">
+                <label for="samtal">Telefonsamtal</label>
+                <input type="radio" name="kontaktad" value="samtal">
+                <label for="SMS">SMS</label>
+                <input type="radio" name="kontaktad" value="sms">
 
-    </nav>
-  </header>
-  <main>
-    <h2>Kontakta oss</h2>
-    <article>
-      <form>
-        <label for="Namn">
-          Namn: *
-        </label><br>
-        <input type="text" id="Namn" name="Namn" required><br>
-        <label for="E-post">
-          E-post: *
-        </label><br>
-        <input type="email" id="E-post" name="E-post" required><br>
-        <!--Required för att se till att det viktiga skrivs in-->
-        <label for="Telefon">
-          Telefonnummer: *
-        </label><br>
-        <input type="tel" id="Telefon" name="Telefon" required><br>
-        <p>Vill helst bli kontaktad via:</p>
-        <label>
-          <input type="radio" name="kontaktad" value="mejl" checked="checked">
-          E-post
-        </label>
-        <label for="">
-          <input type="radio" name="kontaktad" value="samtal">
-          Telefonsamtal
-        </label>
-        <label>
-          <input type="radio" name="kontaktad" value="sms">
-          SMS
-        </label><br>
-        <label for="Amne">
-          Ämne:
-        </label><br>
-        <select>
-          <option value="Produkt">Produktfrågor</option>
-          <option value="feedback">Feedback</option>
-          <option value="frågor">Almäna Frågor</option>
-          <option value="övrigt">Övrigt</option>
-        </select><br>
-        <label for="Meddelande">
-          Meddelande:
-        </label><br>
-        <textarea id="Meddelande" name="Meddelande" rows="5">
-                 </textarea><br>
-        <!--textarea för större kommentarsfält-->
-        <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
-        <label for="GDPR">
-          Jag Godkäner Användarvillkoren *
-        </label><br>
-        <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
-        <label for="GDPR">
-          Jag vill gå med i Gruppsex nyhetsbrev
-        </label><br>
-        <input type="submit" value="Skicka">
-      </form>
+                <label for="Amne">Ämne:</label>
+                <select>
+                    <option value="Produkt">Produktfrågor</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="frågor">Almäna Frågor</option>
+                    <option value="övrigt">Övrigt</option>
+                  </select>
+
+                <label for="Meddelande">Meddelande:</label>
+                <textarea id="Meddelande" name="Meddelande" rows="5"></textarea>
+                <!--textarea för större kommentarsfält-->
+                
+                <label for="GDPR">Jag godkänner villkoren</label>
+                <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
+
+                <label for="GDPR">Jag vill gå med i Gruppsex nyhetsbrev</label>
+                <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
+
+                <input type="submit" value="Skicka">
+              </fieldset>
+            </form>
 
     </article>
     <h2>Grundare</h2>

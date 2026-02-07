@@ -201,3 +201,57 @@ button {
 main > article.indexArticle > a {
   display: block;
 }
+
+/* Sätter flex på själva formuläret*/
+article.formular {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: column;*/
+  border: transparent;
+  background-color: transparent;
+}
+
+form {
+  border-color: transparent;
+  background-color: none;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+/* Sätter flex på formulärets innehåll */
+fieldset.rubrik {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  background-color: var(--color-3);
+  border-color: var(--color-1);
+  border-radius: 20px;
+}
+
+/*Rubriken "kontakta oss"*/
+legend {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+label[type="checkbox"] {
+  vertical-align: middle;
+}
+
+select {
+  font-size: 1rem;
+  padding: 5px;
+}
