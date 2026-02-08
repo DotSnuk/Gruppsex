@@ -50,17 +50,17 @@
 
           <p>Vill helst bli kontaktad via:</p>
           <label for="mail">E-post</label>
-          <input type="radio" name="kontaktad" value="mejl" checked="checked">
+          <input type="radio" id="mail" name="kontaktad" value="mejl" checked="checked">
           <label for="samtal">Telefonsamtal</label>
-          <input type="radio" name="kontaktad" value="samtal">
+          <input type="radio" id="samtal" name="kontaktad" value="samtal">
           <label for="SMS">SMS</label>
-          <input type="radio" name="kontaktad" value="sms">
+          <input type="radio" id="SMS" name="kontaktad" value="sms">
 
           <label for="Amne">Ämne:</label>
-          <select>
+          <select id="Amne">
             <option value="Produkt">Produktfrågor</option>
             <option value="feedback">Feedback</option>
-            <option value="frågor">Almäna Frågor</option>
+            <option value="frågor">Allmäna Frågor</option>
             <option value="övrigt">Övrigt</option>
           </select>
 
@@ -71,8 +71,8 @@
           <label for="GDPR">Jag godkänner villkoren</label>
           <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
 
-          <label for="GDPR">Jag vill gå med i Gruppsex nyhetsbrev</label>
-          <input type="checkbox" id="GDPR" name="GDPR" value="Nyhetsbrev">
+          <label for="nyhetsbrev">Jag vill gå med i Gruppsex nyhetsbrev</label>
+          <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="Nyhetsbrev">
 
           <input type="submit" value="Skicka">
         </fieldset>
