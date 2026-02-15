@@ -32,72 +32,92 @@
     </nav>
   </header>
   <main>
-    <!--Gör en separat artikelklass för att kunna använda flexbox på formuläret-->
+    <!--formuläret utgör majoriteten av sidan, därför ligger det i en artikelklass-->
     <article class="formular">
       <form>
-        <fieldset class="rubrik">
-          <legend>Kontakta oss</legend>
+        <h2>Kontakta oss</h2>
 
-          <label for="Namn">Namn: *</label>
-          <input type="text" id="Namn" name="Namn" required>
+        <div> <!--div:ar för enklare styling i css-->
+          <fieldset class="kontakt">
+            <legend>Dina kontaktuppgifter:</legend>
+            <label for="Namn"></label>
+            <input type="text" id="Namn" name="Namn" placeholder="Namn *" required>
 
-          <label for="E-post">E-post: *</label>
-          <input type="email" id="E-post" name="E-post" required>
+            <label for="E-post"></label>
+            <input type="email" id="E-post" name="E-post" placeholder="E-post *" required>
 
-          <label for="Telefon">Telefonnummer: *</label>
-          <input type="tel" id="Telefon" name="Telefon" required>
+            <label for="Telefon"></label>
+            <input type="tel" id="Telefon" name="Telefon" placeholder="Telefonnummer *" required>
+          </fieldset>
           <!--Lägger till Required för att säkerstäla att vi får de viktigaste uppgifterna-->
+        </div>
 
-          <p>Vill helst bli kontaktad via:</p>
-          <label for="mail">E-post</label>
-          <input type="radio" id="mail" name="kontaktad" value="mejl" checked="checked">
-          <label for="samtal">Telefonsamtal</label>
-          <input type="radio" id="samtal" name="kontaktad" value="samtal">
-          <label for="SMS">SMS</label>
-          <input type="radio" id="SMS" name="kontaktad" value="sms">
+        <div>
+          <fieldset class="radioknappar">
+            <legend>Vill helst bli kontaktad via:</legend>
+            <label for="mail">E-post</label>
+            <input type="radio" id="mail" name="kontaktadVia" value="mejl" checked="checked">
+            <label for="samtal">Telefonsamtal</label>
+            <input type="radio" id="samtal" name="kontaktadVia" value="samtal">
+            <label for="SMS">SMS</label>
+            <input type="radio" id="SMS" name="kontaktadVia" value="sms">
+          </fieldset>
+        </div>
 
-          <label for="Amne">Ämne:</label>
-          <select id="Amne">
-            <option value="Produkt">Produktfrågor</option>
-            <option value="feedback">Feedback</option>
-            <option value="frågor">Allmäna Frågor</option>
-            <option value="övrigt">Övrigt</option>
-          </select>
+        <div>
+          <fieldset class="option">
+            <legend>Ärendet gäller:</legend>
+            <label for="Amne"></label>
+            <select id="Amne">
+              <option value="Produkt">Produktfrågor</option>
+              <option value="feedback">Feedback</option>
+              <option value="frågor">Allmäna Frågor</option>
+              <option value="övrigt">Övrigt</option>
+            </select>
+          </fieldset>
+        </div>
 
-          <label for="Meddelande">Meddelande:</label>
-          <textarea id="Meddelande" name="Meddelande" rows="5"></textarea>
-          <!--textarea för större kommentarsfält-->
+        <div>
+          <fieldset class="meddelande">
+            <label for="Meddelande"></label>
+            <textarea id="Meddelande" name="Meddelande" rows="5" cols="30" placeholder="Berätta om ditt ärende:"></textarea>
+            <!--textarea för större kommentarsfält-->
 
-          <label for="GDPR">Jag godkänner villkoren</label>
-          <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
+            <label for="GDPR">Jag godkänner villkoren</label>
+            <input type="checkbox" id="GDPR" name="GDPR" value="Användarvillkor" required>
+          </fieldset>
+        </div>
 
+        <div>
+          <fieldset class="villkor">
           <label for="nyhetsbrev">Jag vill gå med i Gruppsex nyhetsbrev</label>
           <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="Nyhetsbrev">
-
           <input type="submit" value="Skicka">
-        </fieldset>
+          </fieldset>
+        </div>
       </form>
 
+      <h2>Grundare</h2>
+      <section class="founders">
+        <div>
+          <p>Hampus</p>
+          <img class="founderimg" src="bilder/hampus.png" alt="Grundare Hampus">
+          <a href="mailto:hampus@mail.com">hampus@mail.com</a>
+        </div>
+        <div>
+          <p>Tobias</p>
+          <img class="founderimg" src="bilder/tobias.png" alt="Grundare Tobias">
+          <a href="mailto:tobias@mail.com">tobias@mail.com</a>
+        </div>
+        <div>
+          <p>Felicia</p>
+          <img class="founderimg" src="bilder/felicia.png" alt="Grundare Felicia">
+          <a href="mailto:felicia@mail.com">felicia@mail.com</a>
+        </div>
     </article>
-    <h2>Grundare</h2>
-    <article class="founders">
-      <div>
-        <p>Hampus</p>
-        <img class="founderimg" src="bilder/hampus.png" alt="Grundare Hampus">
-        <a href="mailto:hampus@mail.com">hampus@mail.com</a>
-      </div>
-      <div>
-        <p>Tobias</p>
-        <img class="founderimg" src="bilder/tobias.png" alt="Grundare Tobias">
-        <a href="mailto:tobias@mail.com">tobias@mail.com</a>
-      </div>
-      <div>
-        <p>Felicia</p>
-        <img class="founderimg" src="bilder/felicia.png" alt="Grundare Felicia">
-        <a href="mailto:felicia@mail.com">felicia@mail.com</a>
-      </div>
-    </article>
+
   </main>
+
   <footer>
     <!-- footer mest för att demonstrera -->
     <p><i>Alla klagomål skickas till <a href="mailto:hampus@mail.com">hampus@mail.com</a></i></p>

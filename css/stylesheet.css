@@ -202,58 +202,83 @@ main > article.indexArticle > a {
   display: block;
 }
 
-/* Sätter flex på själva formuläret*/
 article.formular {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: column;*/
   border: transparent;
   background-color: transparent;
+  margin-top: 40px;
 }
 
 form {
-  border-color: transparent;
-  width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  padding: 0;
-
-}
-
-
-
-/* Sätter flex på formulärets innehåll */
-fieldset.rubrik {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-1);
+  border-radius: 10px;
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0;
-  background-color: var(--color-3);
-  border-color: var(--color-1);
-  border-radius: 20px;
-  
 }
 
-/*Rubriken "kontakta oss"*/
-legend {
-  font-weight: bold;
-  font-size: 22px;
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: transparent;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
-
+.radioknappar {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 0;
+  padding-top: 7px;
+  border: transparent;
 }
 
-input[type="checkbox"] {
-  margin-right: 8px;
+input[type="radio"] {
+  vertical-align: top;
+  align-items: start;
 }
 
-label[type="checkbox"] {
-  vertical-align: middle;
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-items: first baseline;
+  align-items: first baseline;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  border: transparent;
 }
 
-select {
-  font-size: 1rem;
-  padding: 5px;
+.meddelande {
+  display: flex;
+  flex-direction: column;
+  justify-items: first baseline;
+  align-items: first baseline;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  border: transparent;
+}
+
+.villkor {
+  display: flex;
+  flex-direction: column;
+  justify-items: first baseline;
+  align-items: first baseline;
+  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px;
+  border: transparent;
 }
